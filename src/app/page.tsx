@@ -6,7 +6,7 @@ import Terminal from "@/components/Terminal";
 import Skills from "@/components/Skills";
 
 
-import { ReactionManager } from "discord.js";
+
 
 
 export default function Home() {
