@@ -19,7 +19,7 @@ export default function Project() {
   ]);
 
   const [scrollPosition, setScrollPosition] = useState(0);
-  const projectContainerRef = useRef(null);
+  const projectContainerRef = useRef<HTMLDivElement>(null); // Définition du type HTMLDivElement
 
   const scrollLeft = () => {
     setScrollPosition((prev) => prev - 200);
