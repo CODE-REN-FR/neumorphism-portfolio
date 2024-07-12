@@ -16,18 +16,51 @@
   }
 }
 
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+  height: 100vh;
+  width: 100vw;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+/*Exception*/
+
+.shadowNeumorphism {
+
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.shadowNeumorphism2 {
+  color: #090909;
+  padding: 10px ;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.shadowNeumorphism2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.marginspecial {
+  margin-right: 30px;
+}
+
+.marginspecial:last-child {
+  margin-right: 0; 
+}
+
+.specialinput {
+
+
+    outline: none;
+    border: none;
+    margin-left: 15px;
+
 }
