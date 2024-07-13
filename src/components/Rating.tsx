@@ -20,10 +20,10 @@ type Rating = {
 
 const Rating: React.FC = () => {
   const [ratingArray, setRatingArray] = useState<Rating[]>([
-    { id: 1, note: 1, avis: '“The work was wonderful! Thank you, Renan!”' },
-    { id: 2, note: 2, avis: '“Wonderful! Thank you, Renan!”' },
-    { id: 3, note: 3, avis: '“The work was wonderful! ”' },
-    { id: 4, note: 4, avis: '“Thank you, Renan!”' },
+    { id: 1, note: 5, avis: '“The work was wonderful! Thank you, Renan!”' },
+    { id: 2, note: 5, avis: '“Wonderful! Thank you, Renan!”' },
+    { id: 3, note: 5, avis: '“The work was wonderful! ”' },
+    { id: 4, note: 5, avis: '“Thank you, Renan!”' },
   ]);
 
   const [currentRatingIndex, setCurrentRatingIndex] = useState<number>(0);

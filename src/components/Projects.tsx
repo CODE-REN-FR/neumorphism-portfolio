@@ -4,18 +4,19 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import leftArrow from "../../public/left-arrow.svg";
 import rightArrow from "../../public/right-arrow.svg";
+import Link from "next/link";
 
 export default function Project() {
   const [projects, setProjects] = useState([
-    { id: 1, url: "https://picsum.photos/200/150" },
-    { id: 2, url: "https://picsum.photos/200/150" },
-    { id: 3, url: "https://picsum.photos/200/150" },
-    { id: 4, url: "https://picsum.photos/200/150" },
-    { id: 5, url: "https://picsum.photos/200/150" },
-    { id: 6, url: "https://picsum.photos/200/150" },
-    { id: 7, url: "https://picsum.photos/200/150" },
-    { id: 8, url: "https://picsum.photos/200/150" },
-    { id: 9, url: "https://picsum.photos/200/150" },
+    { id: 1, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 2, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 3, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 4, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 5, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 6, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 7, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 8, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 9, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
   ]);
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -59,13 +60,14 @@ export default function Project() {
         ref={projectContainerRef}
       >
         {projects.map((project) => (
-          <img
-            key={project.id}
-            src={project.url}
-            alt={`Project ${project.id}`}
-            className="w-[200px] h-[150px] object-cover rounded-[10px] marginspecial"
-            style={{ minWidth: "200px", width: "200px", height: "150px" }}
-          />
+
+          <Link href={project.link} key={project.id} className="marginspecial">
+            <img
+              src={project.url}
+              alt={`Project ${project.id}`}
+              className="h-[150px] object-cover rounded-[10px]  w-[200px] h-[150px] min-w-[200px] min-h-[150px]"
+            />
+          </Link>
         ))}
       </div>
 

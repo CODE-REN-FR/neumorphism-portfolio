@@ -62,5 +62,24 @@ body {
     outline: none;
     border: none;
     margin-left: 15px;
+    width: 60%;
 
+}
+
+.specialhover {
+
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.specialhover:hover {
+
+  text-decoration: underline;
+}
+
+
+.specialhover {
+
+  font-weight: 700;
 }
