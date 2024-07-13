@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import {  useRef } from "react";
 import leftArrow from "../../public/left-arrow.svg";
 import rightArrow from "../../public/right-arrow.svg";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Project() {
   const [projects, setProjects] = useState([
@@ -38,6 +40,9 @@ export default function Project() {
       });
     }
   }, [scrollPosition]);
+
+
+
 
   return (
     <div className="flex justify-center items-center px-[3vw] py-[5vh] w-full shadowNeumorphism rounded-[50px] bg-[#e0e0e0]-500">
