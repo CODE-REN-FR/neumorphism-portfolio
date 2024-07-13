@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
 
   const router = useRouter();
-  const [windowWidth, setWindowWidth] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(1601);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && window.innerWidth < 1600) {
