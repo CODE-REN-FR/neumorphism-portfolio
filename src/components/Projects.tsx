@@ -10,15 +10,15 @@ import { useRouter } from "next/navigation";
 
 export default function Project() {
   const [projects, setProjects] = useState([
-    { id: 1, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 2, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 3, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 4, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 5, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 6, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 7, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 8, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
-    { id: 9, url: "https://dummyimage.com/200x150/ffffff/000000.png&text=No+projects+yet", link: "https://github.com/CODE-REN-FR" },
+    { id: 1, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 2, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 3, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 4, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 5, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 6, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 7, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 8, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 9, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
   ]);
 
   const [scrollPosition, setScrollPosition] = useState(0);

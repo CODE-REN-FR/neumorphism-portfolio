@@ -38,6 +38,11 @@ const Terminal: React.FC = () => {
           <li>Gaming</li>
         </ul>
       </div>
+    `,
+    '/contact': `
+      <div>
+        <strong class="underline">Contact me :</strong> <br><br> <span class="specialhover">Email:</span> renan.yh560@gmail.com <br><br> <span class="specialhover">GitHub:</span> Renan YHUEL
+      </div>
     `
   };
 
