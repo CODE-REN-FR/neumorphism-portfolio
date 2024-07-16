@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 
 export default function Project() {
   const [projects, setProjects] = useState([
-    { id: 1, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
+    { id: 1, url: "../../public/stagey.png", link: "https://github.com/CODE-REN-FR/dmd_front_-stagey" },
     { id: 2, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
     { id: 3, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
     { id: 4, url: "https://picsum.photos/200/150", link: "https://github.com/CODE-REN-FR" },
