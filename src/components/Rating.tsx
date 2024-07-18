@@ -48,13 +48,13 @@ const Rating: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center shadowNeumorphism rounded-[50px] bg-[#e0e0e0]-500 flex-col px-[3vw] py-[5vh] w-full min-h-[150px]">
+    <div className="flex justify-center items-center shadowNeumorphism rounded-[50px] bg-[#e0e0e0]-500 flex-col px-[3vw] py-[7vh] w-full min-h-[150px]">
       <div className="flex flex-col items-center">
         
         <div className="flex mb-5">
           {renderStars(currentRating.note)}
         </div>
-        <p className="text-center text-lg text-plus">{currentRating.avis}</p>
+        <p className="text-center text-plus text-[14px]">{currentRating.avis}</p>
       </div>
     </div>
   );

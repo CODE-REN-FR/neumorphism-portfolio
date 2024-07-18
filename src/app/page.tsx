@@ -15,7 +15,7 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
 
-  const router = useRouter();
+  /*const router = useRouter();
   const [windowWidth, setWindowWidth] = useState(1601);
 
   useEffect(() => {
@@ -42,14 +42,14 @@ export default function Home() {
     if (windowWidth !== null && windowWidth < 1600) {
       router.push('/m');
     }
-  }, [windowWidth]);
+  }, [windowWidth]);*/
 
 
 
   return (
     <main className="w-full h-full flex justify-center items-center">
       <div className="flex w-[95vw] h-[90vh] bg-[#e0e0e0]-500 rounded-[50px] shadowNeumorphism px-[3vw] py-[5vh]">
-        <div className="flex items-center flex-col justify-center h-full w-[30%] space-y-10">
+        <div className="flex items-center flex-col justify-center h-full w-[30%] space-y-10 h-full">
           <Me />
           <Rating />
         </div>
