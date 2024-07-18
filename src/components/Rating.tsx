@@ -54,7 +54,7 @@ const Rating: React.FC = () => {
         <div className="flex mb-5">
           {renderStars(currentRating.note)}
         </div>
-        <p className="text-center text-plus text-[14px]">{currentRating.avis}</p>
+        <p className="text-center text-plus text-[12px]">{currentRating.avis}</p>
       </div>
     </div>
   );
